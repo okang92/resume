@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-
-<!-- Open Graph / Social Media Preview Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okan Gencoglu - Senior Quality Engineer</title>
+    
+    <!-- Open Graph / Social Media Preview Meta Tags -->
     <meta property="og:title" content="Okan Gencoglu - Senior Quality Engineer">
     <meta property="og:description" content="Senior Quality Engineer with over 10 years of experience across aerospace, defense, and high-performance automotive industries.">
     <meta property="og:image" content="https://okangencoglu.com/preview-image.jpg">
@@ -15,9 +18,6 @@
     <meta name="twitter:description" content="Senior Quality Engineer with over 10 years of experience across aerospace, defense, and high-performance automotive industries.">
     <meta name="twitter:image" content="https://okangencoglu.com/preview-image.jpg">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okan Gencoglu - Senior Quality Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -57,7 +57,7 @@
                 </p>
             </div>
             
-            <!-- Interactive Contact Buttons & Theme Toggle (Mobile Optimized) -->
+            <!-- Interactive Contact Buttons & Theme Toggle (Mobile Optimized Fixed) -->
             <div class="flex flex-wrap items-center gap-2 sm:gap-3 relative w-full md:w-auto justify-start md:justify-end">
                 
                 <!-- Call Button & Dropdown -->
@@ -65,7 +65,8 @@
                     <button onclick="toggleDropdown('call-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
                         <i class="fa-solid fa-phone"></i> Call <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </button>
-                    <div id="call-dropdown" class="hidden absolute right-0 mt-2 w-64 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                    <!-- Mobilde kesinlikle ekrandan taşmaması için left-0 ve max-w ayarlandı -->
+                    <div id="call-dropdown" class="hidden absolute left-0 sm:left-auto sm:right-0 mt-2 w-64 max-w-[calc(100vw-3rem)] p-4 rounded-xl dropdown-box border z-50 shadow-xl">
                         <p class="text-xs text-sub mb-1">Phone Number</p>
                         <p class="font-semibold text-sm mb-3">+1 (323) 492-7487</p>
                         <a href="tel:+13234927487" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Call Now</a>
@@ -77,7 +78,7 @@
                     <button onclick="toggleDropdown('email-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
                         <i class="fa-solid fa-envelope"></i> Email <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </button>
-                    <div id="email-dropdown" class="hidden absolute right-0 mt-2 w-72 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                    <div id="email-dropdown" class="hidden absolute left-0 sm:left-auto sm:right-0 mt-2 w-72 max-w-[calc(100vw-3rem)] p-4 rounded-xl dropdown-box border z-50 shadow-xl">
                         <p class="text-xs text-sub mb-1">Email Address</p>
                         <p class="font-semibold text-sm mb-3 truncate">okang92@gmail.com</p>
                         <a href="mailto:okang92@gmail.com" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Send Email</a>
@@ -89,7 +90,7 @@
                     <button onclick="toggleDropdown('linkedin-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </button>
-                    <div id="linkedin-dropdown" class="hidden absolute right-0 mt-2 w-64 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                    <div id="linkedin-dropdown" class="hidden absolute right-0 mt-2 w-64 max-w-[calc(100vw-3rem)] p-4 rounded-xl dropdown-box border z-50 shadow-xl">
                         <p class="text-xs text-sub mb-1">Professional Profile</p>
                         <p class="font-semibold text-sm mb-3">Okan Gencoglu</p>
                         <a href="https://www.linkedin.com" target="_blank" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Visit Profile</a>
@@ -154,7 +155,7 @@
                         <li>Oversaw surface treatments (Aluminum/Titanium anodize, Cad/Chromate plating, Passivation, Solid Film Lube, IVD).</li>
                         <li>Led daily MRB meetings, reviewed engineering drawings, and executed technical dispositions.</li>
                         <li>Spearheaded critical 8D quality investigations, reducing batch rejection rates from 19% to 5.5% in 12 months.</li>
-			<li>Customers: Boeing, Airbus, Lockheed Martin, Northrop Grumman, Embraer, Comac.</li>
+                        <li>Customers: Boeing, Airbus, Lockheed Martin, Northrop Grumman, Embraer, Comac.</li>
                     </ul>
                 </div>
 
@@ -168,7 +169,7 @@
                     <ul class="list-disc list-inside space-y-2 text-sm text-sub">
                         <li>Managed outsource operations for powertrain, body, and chassis components.</li>
                         <li>Conducted domestic and international supplier audits per IATF 16949 requirements.</li>
-			<li>Developed control plans and work instructions for suppliers</li>
+                        <li>Developed control plans and work instructions for suppliers</li>
                     </ul>
                 </div>
 
