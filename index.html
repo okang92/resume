@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+<!-- Open Graph / Social Media Preview Meta Tags -->
+    <meta property="og:title" content="Okan Gencoglu - Senior Quality Engineer">
+    <meta property="og:description" content="Senior Quality Engineer with over 10 years of experience across aerospace, defense, and high-performance automotive industries.">
+    <meta property="og:image" content="https://okangencoglu.com/preview-image.jpg">
+    <meta property="og:url" content="https://okangencoglu.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Okan Gencoglu - Senior Quality Engineer">
+    <meta name="twitter:description" content="Senior Quality Engineer with over 10 years of experience across aerospace, defense, and high-performance automotive industries.">
+    <meta name="twitter:image" content="https://okangencoglu.com/preview-image.jpg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okan Gencoglu - Senior Quality Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'dark') { document.documentElement.classList.add('dark'); }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; transition: background-color 0.3s, color 0.3s; }
+        .html-light body { background-color: #f8fafc; color: #0f172a; }
+        
+        .card-box { background-color: rgba(15, 23, 42, 0.6); border-color: rgba(30, 41, 59, 0.8); transition: background-color 0.3s, border-color 0.3s; }
+        .html-light .card-box { background-color: #ffffff; border-color: #cbd5e1; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+
+        .dropdown-box { background-color: #0f172a; border-color: rgba(51, 65, 85, 1); }
+        .html-light .dropdown-box { background-color: #ffffff; border-color: #cbd5e1; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+
+        .text-sub { color: #94a3b8; }
+        .html-light .text-sub { color: #475569; }
+
+        .border-line { border-color: rgba(30, 41, 59, 0.8); }
+        .html-light .border-line { border-color: #e2e8f0; }
+
+        .dot-color { background-color: #2563eb; }
+        .html-light .dot-color { background-color: #1d4ed8; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="max-w-4xl mx-auto px-6 pt-10 pb-6 border-b border-line">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div>
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Okan Gencoglu</h1>
+                <p class="mt-2 text-xl font-medium text-blue-500">Senior Quality Engineer</p>
+                <p class="mt-1 text-sm text-sub flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-blue-500"></i> Los Angeles, CA
+                </p>
+            </div>
+            
+            <!-- Interactive Contact Buttons & Theme Toggle (Mobile Optimized) -->
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 relative w-full md:w-auto justify-start md:justify-end">
+                
+                <!-- Call Button & Dropdown -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('call-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
+                        <i class="fa-solid fa-phone"></i> Call <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div id="call-dropdown" class="hidden absolute right-0 mt-2 w-64 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                        <p class="text-xs text-sub mb-1">Phone Number</p>
+                        <p class="font-semibold text-sm mb-3">+1 (323) 492-7487</p>
+                        <a href="tel:+13234927487" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Call Now</a>
+                    </div>
+                </div>
+
+                <!-- Email Button & Dropdown -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('email-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
+                        <i class="fa-solid fa-envelope"></i> Email <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div id="email-dropdown" class="hidden absolute right-0 mt-2 w-72 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                        <p class="text-xs text-sub mb-1">Email Address</p>
+                        <p class="font-semibold text-sm mb-3 truncate">okang92@gmail.com</p>
+                        <a href="mailto:okang92@gmail.com" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Send Email</a>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Button & Dropdown -->
+                <div class="relative">
+                    <button onclick="toggleDropdown('linkedin-dropdown')" class="card-box flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border text-sm font-medium hover:text-blue-500 transition-colors cursor-pointer">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div id="linkedin-dropdown" class="hidden absolute right-0 mt-2 w-64 p-4 rounded-xl dropdown-box border z-50 shadow-xl">
+                        <p class="text-xs text-sub mb-1">Professional Profile</p>
+                        <p class="font-semibold text-sm mb-3">Okan Gencoglu</p>
+                        <a href="https://www.linkedin.com" target="_blank" class="block w-full text-center py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-colors">Visit Profile</a>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleTheme()" class="card-box w-10 h-10 flex items-center justify-center rounded-lg border text-sm font-medium transition-colors cursor-pointer">
+                    <i id="theme-icon" class="fa-solid fa-sun text-blue-500"></i>
+                </button>
+
+            </div>
+        </div>
+        <!-- Genişlik diğer bölümlerle eşitlendi ve iki yana yaslandı -->
+        <p class="mt-6 text-sub leading-relaxed text-base text-justify w-full">
+            Results-driven Senior Quality Engineer with over 10 years of comprehensive experience across aerospace, defense, and high-performance automotive industries. Strong metallurgical and material science background (M.Sc. in Nanoscience) with deep technical knowledge in investment casting theory, alloy verification, and special processes.
+        </p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-2 space-y-8">
+        
+        <!-- Skills Section -->
+        <section>
+            <h2 class="text-2xl font-bold tracking-tight mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-gears text-blue-500"></i> Core Skills & Standards
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="card-box p-3 rounded-xl border">
+                    <h3 class="font-semibold text-blue-500 mb-1">Standards</h3>
+                    <p class="text-sm text-sub">AS 9100, AS 9102, AS 9146</p>
+                    <p class="text-sm text-sub">IATF 16949</p>
+                    <p class="text-sm text-sub">GD&T</p>
+                </div>
+                <div class="card-box p-3 rounded-xl border">
+                    <h3 class="font-semibold text-blue-500 mb-1">Quality Tools</h3>
+                    <p class="text-sm text-sub">APQP, PPAP</p>
+                    <p class="text-sm text-sub">FMEA, CP, SPC</p>
+                </div>
+                <div class="card-box p-3 rounded-xl border">
+                    <h3 class="font-semibold text-blue-500 mb-1">Methodologies</h3>
+                    <p class="text-sm text-sub">8D, BPSM, RCCA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section>
+            <h2 class="text-2xl font-bold tracking-tight mb-4 flex items-center gap-3">
+                <i class="fa-solid fa-briefcase text-blue-500"></i> Professional Experience
+            </h2>
+            <div class="space-y-8 border-l-2 border-line pl-6 ml-2">
+                
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full dot-color ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold">Senior Quality Engineer</h3>
+                        <span class="text-sm font-medium text-blue-500">04/2024 – PRESENT</span>
+                    </div>
+                    <p class="text-sm text-sub font-medium mb-3">Lisi Aerospace, US</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-sub">
+                        <li>Managed compliance with AS9100, AS9102, AS9146, NADCAP, AMS2750H, and customer standards such as BPS-F-68.</li>
+                        <li>Oversaw surface treatments (Aluminum/Titanium anodize, Cad/Chromate plating, Passivation, Solid Film Lube, IVD).</li>
+                        <li>Led daily MRB meetings, reviewed engineering drawings, and executed technical dispositions.</li>
+                        <li>Spearheaded critical 8D quality investigations, reducing batch rejection rates from 19% to 5.5% in 12 months.</li>
+			<li>Customers: Boeing, Airbus, Lockheed Martin, Northrop Grumman, Embraer, Comac.</li>
+                    </ul>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold">Supplier Quality Engineer</h3>
+                        <span class="text-sm font-medium text-blue-500">12/2023 – 04/2024</span>
+                    </div>
+                    <p class="text-sm text-sub font-medium mb-3">Czinger Vehicles, US</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-sub">
+                        <li>Managed outsource operations for powertrain, body, and chassis components.</li>
+                        <li>Conducted domestic and international supplier audits per IATF 16949 requirements.</li>
+			<li>Developed control plans and work instructions for suppliers</li>
+                    </ul>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold">Supplier Quality & Process Engineer</h3>
+                        <span class="text-sm font-medium text-blue-500">07/2018 – 11/2022</span>
+                    </div>
+                    <p class="text-sm text-sub font-medium mb-3">Trelleborg Ind. Sol., TR</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-sub">
+                        <li>Optimized KPIs for rubber mixing lines (Banbury) including OEE, OPAH, and HSE</li>
+                        <li>Executed supplier audits for quality, sustainability, and supply assurance using APQP, PPAP, 8D, and FMEA.</li>
+                    </ul>
+                </div>
+
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-700 ring-4 ring-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold">R&D Engineer</h3>
+                        <span class="text-sm font-medium text-blue-500">03/2017 – 07/2018</span>
+                    </div>
+                    <p class="text-sm text-sub font-medium mb-3">Samsun Yurt Savunma, TR</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-sub">
+                        <li>Worked on polymer nanocomposite materials and surface treatments for defense & aviation projects (Boeing, Airbus, JSF, Sikorsky)</li>
+                        <li>Conducted failure analysis and characterization utilizing SEM, AFM, XRD, XRF and thermal analysis.</li>
+                        <li>International Tender Program preparations: DALO, Norway Army, Phillipines National Police, USA CBP</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2 class="text-2xl font-bold tracking-tight mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-graduation-cap text-blue-500"></i> Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-box p-5 rounded-xl border">
+                    <h3 class="font-bold">Master (M.Sc.) in Nanoscience & Nanotechnology</h3>
+                    <p class="text-sm text-blue-500 mt-1">Ondokuz Mayıs University, TR (09/2015 – 08/2018)</p>
+                    <p class="text-sm text-sub mt-2">Graduated 1st of 12, GPA: 3.69/4.00</p>
+                </div>
+                <div class="card-box p-5 rounded-xl border">
+                    <h3 class="font-bold">Bachelor (B.Sc.) in Materials Science Engineering</h3>
+                    <p class="text-sm text-blue-500 mt-1">Ondokuz Mayıs University, TR (09/2010 – 06/2014)</p>
+                    <p class="text-sm text-sub mt-2">Graduated 1st of 45, GPA: 3.16/4.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <h2 class="text-2xl font-bold tracking-tight mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-certificate text-blue-500"></i> Certifications & Training
+            </h2>
+            <ul class="card-box list-disc list-inside space-y-2 text-sm text-sub p-6 rounded-xl border">
+                <li>Introduction to Pyrometry - NADCAP (Dec 2024)</li>
+                <li>Boeing Problem Solving Methodology (BPSM) (Nov 2025)</li>
+                <li>AS9100D Internal Auditor (May 2026)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-line text-center text-sm text-sub">
+        <p>&copy; 2026 Okan Gencoglu. Built for speed and simplicity.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const rootElement = document.documentElement;
+        const iconElement = document.getElementById('theme-icon');
+
+        function applyTheme(theme) {
+            if (theme === 'light') {
+                rootElement.classList.add('html-light');
+                iconElement.className = "fa-solid fa-moon text-blue-600";
+            } else {
+                rootElement.classList.remove('html-light');
+                iconElement.className = "fa-solid fa-sun text-blue-500";
+            }
+        }
+
+        applyTheme(savedTheme);
+
+        function toggleTheme() {
+            const currentTheme = rootElement.classList.contains('html-light') ? 'light' : 'dark';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        }
+
+        function toggleDropdown(dropdownId) {
+            const dropdowns = ['call-dropdown', 'email-dropdown', 'linkedin-dropdown'];
+            dropdowns.forEach(id => {
+                const el = document.getElementById(id);
+                if (id === dropdownId) {
+                    el.classList.toggle('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) {
+                document.querySelectorAll('[id$="-dropdown"]').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
